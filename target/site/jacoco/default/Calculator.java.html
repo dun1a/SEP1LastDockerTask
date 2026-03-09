@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Calculator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DockerTask</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">Calculator.java</span></div><h1>Calculator.java</h1><pre class="source lang-java linenums">import java.util.Scanner;
+
+public class Calculator {
+    // Constructor
+<span class="fc" id="L5">    Calculator() {}</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L8">        Calculator test = new Calculator();  // Create an instance of Test</span>
+<span class="nc" id="L9">        test.run();              // Call the run method</span>
+<span class="nc" id="L10">    }</span>
+
+    // Method to handle input and perform addition
+    public void run() {
+<span class="nc" id="L14">        Scanner sc = new Scanner(System.in);</span>
+
+<span class="nc" id="L16">        System.out.println(&quot;Enter the first number &quot;);</span>
+<span class="nc" id="L17">        int num1 = sc.nextInt();</span>
+
+<span class="nc" id="L19">        System.out.println(&quot;Enter the second number&quot;);</span>
+<span class="nc" id="L20">        int num2 = sc.nextInt();</span>
+
+<span class="nc" id="L22">        int sum = addNumbers(num1, num2);</span>
+<span class="nc" id="L23">        System.out.println(&quot;Here is the sum: &quot; + sum);</span>
+<span class="nc" id="L24">    }</span>
+
+    // Non-static method to add numbers
+    public int addNumbers(int num1, int num2) {
+<span class="fc" id="L28">        return num1 + num2;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
